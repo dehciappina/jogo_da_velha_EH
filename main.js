@@ -69,4 +69,11 @@ function verificar() {
     ) {
         jogoVencido.classList.add('win_message_appear')
     }
+    else if(contador === 9){
+        jogoFinalizado.classList.add('end_message_appear')
+
+        setTimeout(function() {
+            jogoFinalizado.classList.remove('end_message_appear')
+        }, 5000)
+    }
 }
